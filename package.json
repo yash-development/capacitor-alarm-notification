@@ -1,0 +1,49 @@
+{
+  "name": "capacitor-alarm-notification",
+  "version": "0.0.1",
+  "description": "alarm plugin for capacitor",
+  "main": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rm -rf ./dist",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "go",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^4.7.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^4.7.1",
+    "@capacitor/ios": "^4.7.1",
+    "typescript": "^5.0.2"
+  },
+  "files": [
+    "dist/",
+    "ios/",
+    "android/",
+    "CapacitorAlarmNotification.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "ios": {
+      "src": "ios"
+    },
+    "android": {
+      "src": "android"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yash-development/capacitor-alarm-notification.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yash-development/capacitor-alarm-notification.git/issues"
+  }
+}
